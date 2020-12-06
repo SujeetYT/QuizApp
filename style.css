@@ -8,24 +8,69 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .wrapper{
+    overflow: hidden;
     display: flex;   
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #414141;
+    background: linear-gradient(-45deg, #9c1af3, #2d80fc) no-repeat;
+    position: relative;
     /* background-color: #181818; */
 }
+.bgText{
+    position: relative;
+    display: flex;
+}
+.bg{
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+    position: absolute;
+    font-size: 450px;
+    transform: translateX(-22%) translateY(-70%);
+    /* transform: translate(31% -26%); */
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.2;
+}
+.bg1{
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+    position: absolute;
+    font-size: 320px;
+    transform: translateX(-120%) translateY(-50%) rotate(-90deg);
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.2;
+}
+.bg2{
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+    position: absolute;
+    font-size: 150px;
+    transform: translateX(-37%) translateY(20%);
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.2;
+}
+.wrap{
+    width: 50%;
+    margin: 0 50px;
+    padding: 20px 25px;
+    /* height: 300px; */
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.555));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+
+}
 .welcome_text{
-    width: 500px;
+    width: 400px;
     margin: 0px 15px;  
-    /* background-color: #999999; */ 
+    /* background-color: #999999;  */
+    position: relative;
     
 }
 .welcome_text h2{
     text-align: center;
     color: #d3d3d3;
-    font-weight: 400;  
+    font-weight: 700; 
 }
 .welcome_form input:focus,
 .welcome_form button:focus{
@@ -47,12 +92,12 @@ body{
     font-size: 20px; 
 }
 .welcome_form button{
-    background-color:  #d3d3d3;
+    background: linear-gradient(45deg,#9c1af3, #2d80fc);
     font-size: 20px;
     padding: 20px 0;   
     border: none;
     border-radius: 27px;
-    color: #181818;
+    color: #ffffff;
     transition: 0.4s all;  
     font-weight: 700;
 }
