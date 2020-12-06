@@ -28,7 +28,7 @@ body{
     font-size: 450px;
     transform: translateX(-22%) translateY(-70%);
     /* transform: translate(31% -26%); */
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.5);
     opacity: 0.2;
 }
 .bg1{
@@ -36,7 +36,7 @@ body{
     position: absolute;
     font-size: 320px;
     transform: translateX(-120%) translateY(-50%) rotate(-90deg);
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.5);
     opacity: 0.2;
 }
 .bg2{
@@ -44,15 +44,15 @@ body{
     position: absolute;
     font-size: 150px;
     transform: translateX(-37%) translateY(20%);
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.5);
     opacity: 0.2;
 }
 .wrap{
-    width: 50%;
-    margin: 0 50px;
-    padding: 20px 25px;
+    min-width: 40%;
+    margin: 0 40px;
+    padding: 30px;
     /* height: 300px; */
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.555));
+    background: #0000009a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,49 +60,50 @@ body{
     position: absolute;
 
 }
-.welcome_text{
-    width: 400px;
-    margin: 0px 15px;  
-    /* background-color: #999999;  */
-    position: relative;
-    
-}
-.welcome_text h2{
-    text-align: center;
-    color: #d3d3d3;
-    font-weight: 700; 
-}
-.welcome_form input:focus,
-.welcome_form button:focus{
-    outline:  none;
-}
-.welcome_form input,
-.welcome_form button{
-    display: block;
-    width: 100%;
-    margin: 20px 0;   
-}
-.welcome_form input{
-    border: none;
-    text-align: center;
-    background-color: transparent;
-    border-bottom: 2px solid #3EA6FF;
+.wrap h2{
+    font-size: 30px;
     color: #fff;
-    margin-bottom: 15px;
-    font-size: 20px; 
+    font-weight: 300;
+    text-align: center;
 }
-.welcome_form button{
-    background: linear-gradient(45deg,#9c1af3, #2d80fc);
-    font-size: 20px;
-    padding: 20px 0;   
+.wrap .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+}
+.wrap .inputBox input{
+    background: transparent;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
     border: none;
-    border-radius: 27px;
-    color: #ffffff;
-    transition: 0.4s all;  
-    font-weight: 700;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    outline: none;
+    color: #fff;
 }
-.welcome_form button:hover{
-    /* background-color: #aaaaaa; */
-    transform: translateY(-5px);  
-    cursor: pointer; 
+.wrap .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events:  none;
+    transition: 0.5s;
+    color: #fff;
+}
+.wrap .inputBox input:focus~span,
+.wrap .inputBox input:valid~span{
+    color: #2d80fc;
+    transform: translateY(-30px);
+}
+.wrap .inputBox button{
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2d80fc;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
 }
