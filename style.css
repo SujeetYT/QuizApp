@@ -7,6 +7,8 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Making Flexbox here  */
 .wrapper{
     overflow: hidden;
     display: flex;   
@@ -22,7 +24,10 @@ body{
     position: relative;
     display: flex;
 }
+
+/* Each bg selector represents the BAckground Typography */
 .bg{
+    /* Below code disables the text selection  */
     -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
     position: absolute;
     font-size: 450px;
@@ -70,6 +75,9 @@ body{
     position: relative;
     width: 100%;
     margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .wrap .inputBox input{
     background: transparent;
@@ -81,10 +89,11 @@ body{
     border-bottom: 2px solid rgb(199, 199, 199);
     outline: none;
     color: #fff;
+    text-align: center;
 }
 .wrap .inputBox span{
     position: absolute;
-    left: 0;
+    /* left: 0; */
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
