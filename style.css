@@ -93,7 +93,6 @@ body{
 }
 .wrap .inputBox span{
     position: absolute;
-    /* left: 0; */
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
@@ -104,6 +103,7 @@ body{
 .wrap .inputBox input:focus~span,
 .wrap .inputBox input:valid~span{
     color: #2d80fc;
+    font-weight: 600;
     transform: translateY(-30px);
 }
 .wrap .inputBox button{
