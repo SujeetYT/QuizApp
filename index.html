@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizzApp</title>
     <!-- Adding the stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head> 
 <body>
     <div class="wrapper">
@@ -15,16 +15,17 @@
             <h1 class="bg2">QuizzApp</h1>
         </div>
         <div class="wrap">
-            <form>
+            <form onsubmit="submitForm(event)">
                 <h2>Welcome to QuizzApp</h2>
                 <div class="inputBox">
-                    <input type="text" required="required">
+                    <input type="text" required="required" id="name" autocomplete="off">
                     <span>Full Name</span>
                 </div>
                 <div class="inputBox">
                     <button type="submit">Start Quiz</button> 
                 </div>
             </form>
+            <script src="./JavaScript/QuizApp.js"></script>
         </div>
     </div>
 </body>
