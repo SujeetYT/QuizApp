@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Making Flexbox here  */
+.wrapper{
+    overflow: hidden;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(-45deg, #9c1af3, #2d80fc) no-repeat; */
+    /* background: url("https://mydesktopwalls.com/wp-content/uploads/2020/07/Awesome-Background.jpg") no-repeat; */
+    position: relative;
+    background: #ffffff;
+}
+.bgText{
+    position: relative;
+    display: flex;
+}
+
+/* Each bg selector represents the BAckground Typography */
+.bg{
+    /* Below code disables the text selection  */
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+    position: absolute;
+    font-size: 450px;
+    transform: translateX(-22%) translateY(-70%);
+    /* transform: translate(31% -26%); */
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.2;
+}
+.bg1{
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+    position: absolute;
+    font-size: 320px;
+    transform: translateX(-120%) translateY(-50%) rotate(-90deg);
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.2;
+}
+.bg2{
+    -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+    position: absolute;
+    font-size: 150px;
+    transform: translateX(-37%) translateY(20%);
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 0.2;
+}
+.wrap{
+    min-width: 40%;
+    margin: 0 40px;
+    padding: 30px;
+    /* height: 300px; */
+    background: #0000009a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 2px 2px 10px 1px #0000009a;
+
+}
+.wrap h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+.wrap .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap .inputBox input{
+    background: transparent;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    outline: none;
+    color: #fff;
+    text-align: center;
+}
+.wrap .inputBox span{
+    position: absolute;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events:  none;
+    transition: 0.5s;
+    color: #fff;
+}
+.wrap .inputBox input:focus~span,
+.wrap .inputBox input:valid~span{
+    color: #2d80fc;
+    font-weight: 600;
+    transform: translateY(-30px);
+}
+.wrap .inputBox button{
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2d80fc;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px #0000009a;
+    outline: none;
+}
