@@ -57,7 +57,7 @@ Step 3. Make something relevent to the project Description.
 Step 4. Push Changes.
 
 ```
-git add .
+git add *
 
 git commit -m "Your Commit Message"
 
