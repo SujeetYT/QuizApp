@@ -42,7 +42,7 @@ If you like this repo then please drop a 🌟
 # How to contribute?
 Step 1. Fork the repository and copy it to your local server. 
 
-copy and paste to your command prompt
+To copyin your local server just copy the following code and paste it in your command prompt
 
 ```
 git clone https://github.com/SujeetYT/QuizApp.git
